@@ -11,7 +11,7 @@ function App() {
   const dispatch = useDispatch();
   useEffect(()=>{
       dispatch(fetchChannelList())
-  },[]);
+  },[dispatch]);
   return (
       <div className="App">
           <button onClick={() => {
